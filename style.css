@@ -6,4 +6,143 @@
   margin: 0;
 }
 
+body {
+  background-color: hsl(257deg, 40%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Open Sans";
+}
+
+.grid__container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.logo {
+  margin: 1.2rem 0;
+  max-width: 150px;
+}
+
+.hero__img {
+  max-width: 100%;
+}
+
+.hero__text {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero__body,
+.hero__p {
+  padding: 1.5rem;
+}
+
+.register {
+  border-radius: 3rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 220px;
+  border: 0;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.register:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socials .fa-brands {
+  font-size: 1rem;
+  border: 1px solid hsl(257deg, 40%, 49%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 100%;
+}
+
+.ring:hover {
+  border-color: hsl(300deg, 69%, 71%);
+}
+.ring:hover .fa-brands {
+  color: hsl(300deg, 69%, 71%);
+}
+
+body {
+  background-image: url("./../images/bg-mobile.svg");
+  background-size: cover;
+}
+
+.hero__text,
+.hero__p {
+  text-align: center;
+}
+
+.register {
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (min-width: 920px) {
+  body {
+    background-image: url("./../images/bg-desktop.svg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1440px;
+  }
+  .header {
+    grid-column: span 2;
+    margin: 2rem 0 4rem;
+  }
+  .logo {
+    max-width: 200px;
+  }
+  .hero {
+    grid-column: span 1;
+  }
+  .hero__body {
+    grid-column: span 1;
+    padding-left: 2.5rem;
+  }
+  .socials {
+    grid-column: span 2;
+    justify-content: flex-end;
+  }
+  .hero__text,
+.hero__p {
+    text-align: left;
+  }
+  .hero__p {
+    padding: 1.5rem 0;
+  }
+  .register {
+    margin-left: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

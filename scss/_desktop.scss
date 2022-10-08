@@ -1,0 +1,42 @@
+@media (min-width: 920px) {
+  body {
+    background-image: url("./../images/bg-desktop.svg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1440px;
+  }
+  .header {
+    grid-column: span 2;
+    margin: 2rem 0 4rem;
+  }
+  .logo {
+    max-width: 200px;
+  }
+  .hero {
+    grid-column: span 1;
+  }
+  .hero__body {
+    grid-column: span 1;
+    padding-left: 2.5rem;
+  }
+  .socials {
+    grid-column: span 2;
+    justify-content: flex-end;
+  }
+
+  .hero__text,
+  .hero__p {
+    text-align: left;
+  }
+  .hero__p {
+    padding: 1.5rem 0;
+  }
+  .register {
+    margin-left: 0;
+  }
+}
