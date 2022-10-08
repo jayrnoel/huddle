@@ -90,7 +90,8 @@ body {
 
 body {
   background-image: url("./../images/bg-mobile.svg");
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero__text,
@@ -103,9 +104,14 @@ body {
   margin: 1rem auto;
 }
 
+.header {
+  margin: 1.5rem 0;
+}
+
 @media (min-width: 920px) {
   body {
     background-image: url("./../images/bg-desktop.svg");
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;

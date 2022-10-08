@@ -1,6 +1,7 @@
 body {
   background-image: url("./../images/bg-mobile.svg");
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero__text,
@@ -10,4 +11,7 @@ body {
 .register {
   display: block;
   margin: 1rem auto;
+}
+.header {
+  margin: 1.5rem 0;
 }
